@@ -1,7 +1,7 @@
 ﻿/*Programa de Generacioón de documentos PDF desarrollado por Unai Juguera Jiménez 
  * para la generación de portadas para cuadernos de los centros educativos*/
 
-//Versión: V1
+//Versión: V1.0.0.1
 
 using System;
 using iTextSharp.text;
@@ -14,10 +14,13 @@ namespace GeneradorPDF_Consola
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bienvenido y gracias por usar este programa");
+            Console.WriteLine("Programa de Generacioón de documentos PDF desarrollado por Unai Juguera Jiménez" +
+                "para la generación de portadas para cuadernos de los centros educativos");
+            Console.WriteLine("Versión: 1.0.0.1");
             Console.WriteLine("Pulsa cualquier tecla para continuar");
             Console.ReadKey();
             Console.WriteLine("Escribe el nombre de tu documento. (Debe acabar en .pdf)");
+            Console.WriteLine("Recuerda que se generará en el menú raíz de la aplicación. (De ahí que recomiendo usar la versión portable)");
             Document document = new Document();
 
             PdfWriter.GetInstance(document,
